@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown App</title>
+    <!-- style  -->
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- Font awesome icon  -->
+    <script src="https://kit.fontawesome.com/18bd2d5f6b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="setTimerContainer displayNone">
+            <div class="setTimer">
+                <div class="setTimerContent">
+                    <h1>Set your timer</h1>
+                    <div class="timer">
+                        <input class="timerTime" id="inputHour" value="00" type="number" placeholder="Hour">
+                        <input class="timerTime" id="inputMinute" value="00" type="number" placeholder="Minute">
+                        <input class="timerTime" id="inputSecond" value="00" type="number" placeholder="Second">
+                        <input class="timerTime" id="inputMilisec" value="00" type="number" placeholder="Milisec">
+                    </div>
+                    <button class="btn" id="setTimer" onclick="closeTimerContainer()"><i
+                            class="fa-solid fa-stopwatch"></i> Set
+                        Time</button>
+                </div>
+            </div>
+        </div>
+        <h1 class="heading">Countdown App</h1>
+        <div class="stopwatchContainer">
+            <div id="display">
+                <span class="time" id="displayHours">00</span>
+                <span class="time">:</span>
+                <span class="time" id="displayMinutes">00</span>
+                <span class="time">:</span>
+                <span class="time" id="displaySeconds">00</span>
+                <span class="time">:</span>
+                <span class="time" id="displayMiliseconds">00</span>
+            </div>
+            <button onclick="openTimerContainer()" class="btn" id="setTimer"><i class="fa-solid fa-stopwatch"></i> Set
+                Timer</button>
+            <div class="buttonContainer">
+                <button id="startStopval" class="btn stop-start" onclick="toggle()">Start</button>
+                <button class="btn reset" onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/index.js"></script>
+
+</html>

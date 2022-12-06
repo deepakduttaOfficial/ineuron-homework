@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+body > ul {
+  display: flex;
+  flex-direction: row;
+  background-color: #666666;
+  margin-top: 100px;
+}
+body > ul > li {
+  padding: 10px 70px;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+}
+
+body > ul > li:nth-child(2) {
+  background-color: #ffc9b0;
+}
+
+body > ul > li > a {
+  color: #fff;
+}
+
+body > ul > li > ul {
+  position: absolute;
+  top: 43px;
+  left: 170px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  flex-direction: column;
+  z-index: -1;
+}
+body > ul > li > ul > li {
+  margin: 5px 0;
+}
+
+body > ul > li:nth-child(2) > ul {
+  background-color: #c8c8c8;
+}
+
+body > ul > li > ul > li > a {
+  color: #fff;
+}
+
+/* Extra feture  */
+
+/* body > ul > li:hover {
+  background-color: #ffc9b0;
+} */
+
+/* li:hover ul {
+  background-color: #c8c8c8;
+} */

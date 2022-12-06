@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@1,400;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(30deg, #a0f254, #379fe7);
+}
+.center {
+  background-color: #ffffff;
+  padding: 50px 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* form {
+} */
+
+h1 {
+  font-family: "Lobster Two", cursive;
+  letter-spacing: 3px;
+  text-align: left;
+}
+
+h1::before {
+  content: "";
+  height: 40px;
+  margin-right: 21px;
+  width: 0;
+  border: 2px solid #1d90ff;
+  background-color: #1d90ff;
+}
+
+.inputbox {
+  position: relative;
+  margin: 45px 20px;
+}
+
+input[type="text"] {
+  padding: 12px 77px 12px 17px;
+  border-radius: 11px;
+  outline: none;
+  border: 2px solid #000000;
+}
+
+span {
+  font-family: "Sansita", sans-serif;
+  position: absolute;
+  top: 13px;
+  left: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+input[type="button"] {
+  background-color: #1d90ff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 35px;
+  border-radius: 10px;
+  font-size: 17px;
+}

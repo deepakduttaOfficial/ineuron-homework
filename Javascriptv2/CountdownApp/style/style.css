@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --light-gray: #d1d7db;
+  --black: #111b21;
+  --button-color: #2a3942;
+}
+
+body {
+  background-color: #111b21;
+}
+
+.heading {
+  margin-top: 10px;
+  font-weight: 600;
+  color: var(--light-gray);
+}
+.container {
+  text-align: center;
+}
+.stopwatchContainer {
+  background-color: #202c33;
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#display {
+  height: 250px;
+  width: 250px;
+  margin-top: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202c33;
+  box-shadow: rgb(230 230 247 / 20%) 0px 7px 29px 0px;
+}
+.time {
+  color: var(--light-gray);
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 1px;
+}
+
+#setTimer {
+  margin: 30px 0;
+  background-color: #00a884;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  margin: 0 20px;
+  padding: 8px 35px;
+  background-color: var(--button-color);
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 7px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: rgba(16, 31, 41, 0.35) 0px 5px 15px;
+}
+
+.btn:focus {
+  background-color: #29363e;
+}
+
+.stop-start {
+  color: #d1d7db;
+}
+.reset {
+  color: #ea5d5d;
+}
+/* set timer  */
+
+.setTimerContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.setTimer {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  color: var(--light-gray);
+  background-color: #202c33;
+  width: 400px;
+  height: 500px;
+  opacity: 1;
+  overflow: hidden;
+  padding: 20px 5px;
+  margin-top: 70px;
+  animation-name: timer;
+  animation-duration: 0.2s;
+}
+.setTimerContent {
+  margin-top: 20px;
+  width: 100%;
+}
+.timer {
+  display: flex;
+  justify-content: space-around;
+  margin: 60px 0;
+}
+.timerTime {
+  width: 90px;
+  padding: 7px 14px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #2a3942;
+  color: var(--light-gray);
+  font-weight: 500;
+}
+
+.displayNone {
+  display: none;
+}
+
+@keyframes timer {
+  from {
+    margin-top: 00px;
+  }
+  to {
+    margin-top: 70px;
+  }
+}

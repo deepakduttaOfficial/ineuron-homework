@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #CFDFE0;
+}
+
+.btn{
+    padding: 20px 40px;
+    border-radius: 50px;
+    border: none;
+    background: linear-gradient(to bottom, #366ab7 , #071c44);
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+.btn-text-one{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #ffffff;
+}
+.btn-text-two{
+    display: none;
+}
